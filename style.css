@@ -1,9 +1,4 @@
 @import url('https://fonts.googleapis.com/css2? family= Roboto:ital,wght@0,300;1,400;1,500;1,700;1,900 & display=swap');
-/* Variáveis */
-
-card.maratona-explorer2 {
-    --background-image: url(./img/PrintMaratonaExplorer);
-}
 
 body {
     margin: 0;
@@ -219,7 +214,7 @@ a:hover {
     width: 90%;
 }
 
-.card-maratona-explorer2 {
+.card {
     width: 300px;
     height: 300px;
     border-radius: 100%;
@@ -228,7 +223,7 @@ a:hover {
     align-items: center;
     justify-content: center;
     background-color: #042c46;
-    background-image: var(--background-image);
+    background-image: url(./img/RodrigoFructuosoPerfil.jpeg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -253,6 +248,12 @@ a:hover {
     position: relative;
 }
 
+.card-wrapper a {
+    text-decoration: none;
+    color: black;
+}
+
+
 .card-wrapper::before {
     content: '';
     position: absolute;
@@ -266,7 +267,7 @@ a:hover {
 }
 
 .card-wrapper h2 {
-    font-size: 42px;
+    font-size: 40px;
     text-transform: uppercase;
     letter-spacing: 4px;
     margin: 0;
