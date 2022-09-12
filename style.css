@@ -153,12 +153,23 @@ a:hover {
 }
 
 .menu-items ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    justify-items: center;
     list-style-type: none;
+}
+
+.menu-items ul li {
+    margin: 8px;
+    padding: 4px;
+    border: solid 2px #1D1F1F;
 }
 
 .menu-items ul li a {
     margin: 10px 0;
-    color: black;
+    color: #1D1F1F;
     text-decoration: none;
     text-transform: uppercase;
     letter-spacing: 6px;
@@ -358,4 +369,19 @@ a:hover {
 #contato-btn:hover {
     background-color: #FFF;
     color: #3991cd;
+}
+
+/* Formação */
+.formacao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   margin-top: 10%;
+}
+
+/* Hobbies */
+#card-img-hobbie-futebol {
+    background-image: url("./img/Jogador de futebol chutando.png");
+    height: 300px;
 }
